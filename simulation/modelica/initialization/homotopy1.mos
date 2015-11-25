@@ -1,11 +1,6 @@
 // name: homotopy1
 // keywords: initialization, homotopy
 // status: correct
-// cflags:
-// teardown_command: rm -rf initializationTests.homotopy1* _initializationTests.homotopy1* output.log
-//
-//  case for homotopy
-//
 
 loadString("
 within ;
@@ -13,7 +8,6 @@ package initializationTests
   model homotopy1
     Real x; // 3
     Real y; // -3
-    
   equation
     homotopy(x^2, x) = 9;
     homotopy(y^2, -y) = 9;
