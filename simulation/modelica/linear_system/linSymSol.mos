@@ -58,28 +58,41 @@ val(res,1);
 // ""
 // record SimulationResult
 //     resultFile = "foo_res.mat",
-//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-006, method = 'dassl', fileNamePrefix = 'foo', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = '-s euler'",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'foo', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = '-s euler'",
 //     messages = ""
 // end SimulationResult;
 // ""
 // 0.0
-// 4.084932392345307e-014
+// 4.382516571865832e-14
 // true
-// record SimulationResult
-//     resultFile = "foo_res.mat",
-//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-006, method = 'dassl', fileNamePrefix = 'foo', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = '-lv LOG_LS -s euler'",
-//     messages = "LOG_LS            | info    | Start solving Linear System 2 (size 4) at time 0 with Lapack Solver
-// LOG_LS            | info    | ###  0.000017  time to set Matrix A and vector b.
-// LOG_LS            | info    | Solve System: 0.000028
-// LOG_LS            | info    | Start solving Linear System 14 (size 1) at time 0 with Lapack Solver
-// LOG_LS            | info    | ###  0.000005  time to set Matrix A and vector b.
-// LOG_LS            | info    | Solve System: 0.000001
-// LOG_LS            | info    | Start solving Linear System 20 (size 1) at time 0 with Lapack Solver
-// LOG_LS            | info    | ###  0.000001  time to set Matrix A and vector b.
-// LOG_LS            | info    | Solve System: 0.000001
-// "
+// function BackendEquation.solveEquation failed w.r.t __OMC__2$QR$sx$1
+// EQUATION: 0.6666666666666666 * __OMC__2$QR$sx$2 + 0.375 * __OMC__2$QR$sx$3 = time (unknown)
+// LHS:
+// BINARY  +  Integer
+//    |BINARY  *  Real
+//    |   |RCONST 0.6666666666666666
+//    |   |CREF __OMC__2$QR$sx$2 [Real] CREFTYPE:Real
+//    |BINARY  *  Real
+//    |   |RCONST 0.375
+//    |   |CREF __OMC__2$QR$sx$3 [Real] CREFTYPE:Real
+// RHS:
+// CREF time [Real] CREFTYPE:Real
+//
+// ===================
+// - BackendEquation.addEquation failed
+// ArraySize: 124
+// numberOfElement 113
+// Size 113
+// arraySize 124record SimulationResult
+//     resultFile = "",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'foo', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = '-lv LOG_LS -s euler'",
+//     messages = "Failed to build model: foo"
 // end SimulationResult;
-// ""
+// "[BackEnd/BackendEquation.mo:0:0-0:0:writable] Error: Internal error function solveEquation failed
+// Error: Too few equations, under-determined system. The model has 109 equation(s) and 125 variable(s).
+// Error: Internal error Transformation Module PFPlusExt index Reduction Method Pantelides failed!
+// Error: post-optimization module solveLinearSystem (simulation) failed.
+// "
 // 0.0
-// 8.92569973198528e-014
+// 4.382516571865832e-14
 // endResult

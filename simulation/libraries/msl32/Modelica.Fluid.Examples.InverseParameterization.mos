@@ -40,6 +40,9 @@ runScript(modelTesting);getErrorString();
 // Messages: assert            | warning | The following assertion has been violated at time 0.000000
 // |                 | |       | pump.delta_head_init >= 0.0
 // assert            | warning | Variable violating min constraint: 0.0 <= pump.delta_head_init, has value: -2.45172
+// assert            | debug   | Division by zero ($cse9 * pump.medium.h + $cse14 * sink.ports[1].h_outflow + $cse10 * pipe2.port_a.h_outflow) / ($cse9 + $cse14 + $cse10)
+// stdout            | warning | Non-Linear Solver try to handle a problem with a called assert.
+// assert            | debug   | Division by zero ($cse9 * pump.medium.h + $cse14 * sink.ports[1].h_outflow + $cse10 * pipe2.port_a.h_outflow) / ($cse9 + $cse14 + $cse10)
 //
 // Files Equal!
 // [Modelica 3.2.1/Fluid/Interfaces.mo:734:9-739:39:writable] Notification: From here:

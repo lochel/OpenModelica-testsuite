@@ -67,6 +67,9 @@ runScript(modelTesting);getErrorString();
 // |                 | |       | Message : ... End condition reached
 //
 // Files Equal!
+// Error: Internal error IndexReduction.addStateOrderFinder failed for axis1.gear.spring.w_rel:STATE(1,axis1.gear.a_rel)(start = 0.0 unit = "rad/s" stateSelect=StateSelect.prefer )  "Relative angular velocity (= der(phi_rel))" type: Real  with derivative axis1.gear.spring.a_rel:VARIABLE(start = 0.0 unit = "rad/s2" )  "Relative angular acceleration (= der(w_rel))" type: Real
+// Error: Internal error IndexReduction.addStateOrderFinder failed for axis2.gear.spring.w_rel:STATE(1,axis2.gear.a_rel)(start = 0.0 unit = "rad/s" stateSelect=StateSelect.prefer )  "Relative angular velocity (= der(phi_rel))" type: Real  with derivative axis2.gear.spring.a_rel:VARIABLE(start = 0.0 unit = "rad/s2" )  "Relative angular acceleration (= der(w_rel))" type: Real
+// Error: Internal error IndexReduction.addStateOrderFinder failed for axis3.gear.spring.w_rel:STATE(1,axis3.gear.a_rel)(start = 0.0 unit = "rad/s" stateSelect=StateSelect.prefer )  "Relative angular velocity (= der(phi_rel))" type: Real  with derivative axis3.gear.spring.a_rel:VARIABLE(start = 0.0 unit = "rad/s2" )  "Relative angular acceleration (= der(w_rel))" type: Real
 // Warning: There are iteration variables with default zero start attribute. For more information set -d=initialization. In OMEdit Tools->Options->Simulation->OMCFlags, in OMNotebook call setCommandLineOptions("-d=initialization").
 //
 // "true

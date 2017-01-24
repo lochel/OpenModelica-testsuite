@@ -43,70 +43,6 @@ val(c, {0.0, 0.3, 0.6}); getErrorString();
 //
 // Variables (1)
 // ========================================
-// 1: c:VARIABLE()  type: Real 
-//
-//
-// Equations (1, 1)
-// ========================================
-// 1/1 (1): c = b + a   [binding]
-//
-//
-// Simple Equations (0, 0)
-// ========================================
-//
-//
-// State Sets
-// ========================================
-//
-//
-// Matching
-// ========================================
-// 1 variables and equations
-// var 1 is solved in eqn 1
-//
-//
-// StrongComponents
-// ========================================
-// {1:1}
-//
-//
-// unspecified partition
-// ========================================
-//
-// Variables (1)
-// ========================================
-// 1: x:STATE(1)()  type: Real 
-//
-//
-// Equations (1, 1)
-// ========================================
-// 1/1 (1): der(x) = a   [dynamic]
-//
-//
-// Simple Equations (0, 0)
-// ========================================
-//
-//
-// State Sets
-// ========================================
-//
-//
-// Matching
-// ========================================
-// 1 variables and equations
-// var 1 is solved in eqn 1
-//
-//
-// StrongComponents
-// ========================================
-// {1:1}
-//
-//
-// unspecified partition
-// ========================================
-//
-// Variables (1)
-// ========================================
 // 1: y:STATE(1)()  type: Real 
 //
 //
@@ -132,6 +68,42 @@ val(c, {0.0, 0.3, 0.6}); getErrorString();
 // StrongComponents
 // ========================================
 // {1:1}
+//
+//
+// unspecified partition
+// ========================================
+//
+// Variables (2)
+// ========================================
+// 1: x:STATE(1)()  type: Real 
+// 2: c:VARIABLE()  type: Real 
+//
+//
+// Equations (2, 2)
+// ========================================
+// 1/1 (1): der(x) = a   [dynamic]
+// 2/2 (1): c = b + der(x)   [dynamic]
+//
+//
+// Simple Equations (0, 0)
+// ========================================
+//
+//
+// State Sets
+// ========================================
+//
+//
+// Matching
+// ========================================
+// 2 variables and equations
+// var 1 is solved in eqn 1
+// var 2 is solved in eqn 2
+//
+//
+// StrongComponents
+// ========================================
+// {1:1}
+// {2:2}
 //
 //
 //
@@ -194,7 +166,7 @@ val(c, {0.0, 0.3, 0.6}); getErrorString();
 //
 // record SimulationResult
 //     resultFile = "localKnownVars_res.mat",
-//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-006, method = 'dassl', fileNamePrefix = 'localKnownVars', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = ''",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'localKnownVars', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = ''",
 //     messages = ""
 // end SimulationResult;
 // ""
